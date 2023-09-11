@@ -1,0 +1,13 @@
+<form (ngSubmit)="onSubmit()">
+    <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" [(ngModel)]="formData.firstName" required>
+    </div>
+    <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" [(ngModel)]="formData.lastName" required>
+    </div>
+    <button type="submit">Submit</button>
+    <div>{{response}}</div>
+</form>
+  
